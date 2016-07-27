@@ -1,0 +1,152 @@
+/* Footer
+   ========================================================================== */
+
+.bp-maidenform__product-box-row img {
+    @include span(12 of 12);
+}
+
+.bp-maidenform__top-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bp-maidenform__top-grid--top,
+.bp-maidenform__top-grid--bottom {
+    @include span(12 of 12);
+}
+
+.bp-maidenform__content-bottom {
+    padding: 0 50px;
+}
+
+/* Bra Tab */
+
+.bp-maidenform__top-grid .sol-pushup {
+    @include span(5 inside of 12 no-gutters);
+}
+
+.bp-maidenform__top-grid .sol-tshirt {
+    @include span(7 inside of 12 no-gutters last);
+}
+.bp-maidenform__top-grid .sol-nowire,
+.bp-maidenform__top-grid .sol-raceback,
+.bp-maidenform__top-grid .sol-strapless {
+    @include span(4 inside of 12 no-gutters);
+}
+
+/* Panties tab */
+
+.bp-maidenform__top-grid .panty-style-boyshorts {
+    @include span(4.54 inside of 12 no-gutters);
+}
+
+.bp-maidenform__top-grid .panty-style-thong {
+    @include span(7.46 inside of 12 no-gutters last);
+}
+
+.bp-maidenform__top-grid .panty-style-hip {
+    @include span(7.46 inside of 12 no-gutters);
+}
+
+.bp-maidenform__top-grid .panty-style-bikini {
+    @include span(4.54 inside of 12 no-gutters last);
+}
+
+/* Shapewear tab */
+
+.bp-maidenform__top-grid .shwear-sol-tummy {
+    @include span(4.54 inside of 12 no-gutters);
+}
+
+.bp-maidenform__top-grid .shwear-sol-smooth {
+    @include span(7.46 inside of 12 no-gutters last);
+}
+
+.bp-maidenform__top-grid .shwear-sol-hourglass {
+    @include span(7.46 inside of 12 no-gutters);
+}
+
+.bp-maidenform__top-grid .shwear-sol-thighs {
+    @include span(4.54 inside of 12 no-gutters last);
+}
+
+@media (min-width: 40em) {
+    #mf-video-shape .item {
+        @include span(4 of 12);
+    }
+
+    #mf-video-shape .item:nth-child(3) {
+        @include last;
+    }
+}
+
+@media (max-width: 39.99em) {
+    #mf-video-shape .item {
+        @include span(12 of 12);
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .Maidenform_Page .bp-maidenform__tab-video h4 {
+        text-align: center;
+    }
+
+    .Maidenform_Page .bp-maidenform__tab-video .callout_r {
+        float: none;
+    }
+}
+
+/* Global tab image css */
+
+.bp-maidenform__product-box--image,
+.bp-maidenform__product-box--image img,
+.mf-video-bra__img,
+.mf-video-bra__img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Maidenform_Page #mf-video-bra .item {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 66.260em) {
+    .bp-maidenform__product-box,
+    .Maidenform_Page #mf-video-bra .item {
+        @include span(3 of 12);
+    }
+
+    .bp-maidenform__product-box:nth-child(4),
+    .Maidenform_Page #mf-video-bra .item:nth-child(4) {
+        @include last;
+    }
+}
+
+@media (min-width: 40em) and (max-width: 66.250em) {
+    .bp-maidenform__product-box,
+    .Maidenform_Page #mf-video-bra .item {
+        @include span(6 of 12);
+        clear: both;
+    }
+
+    .bp-maidenform__product-box:nth-child(even),
+    .Maidenform_Page #mf-video-bra .item:nth-child(even) {
+        @include last;
+        clear: none;
+    }
+}
+
+@media (max-width: 39.99em) {
+    .bp-maidenform__product-box,
+    .Maidenform_Page #mf-video-bra .item {
+        @include span(12 of 12);
+    }
+
+    .bp-maidenform__content-bottom .bp-maidenform__retailers-cols {
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+}
